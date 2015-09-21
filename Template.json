@@ -1,0 +1,71 @@
+{
+    "register": {
+        "steps": [
+            {
+                "action": "get", 
+                "name": "get_ca", 
+                "parameters": {
+                    "url": "http://{uri}/services/host-register?version=1&cmd=get-pki-trust", 
+                    "uri": "engine.example.com/ovirt-engine", 
+                    "filename": "/etc/pki/ovirt-engine.key"
+                }
+            }, 
+            {
+                "action": "ui", 
+                "name": "approve", 
+                "parameters": {
+                    "key": "OVIRT_ENGINE_FINGERPRINT"
+                }
+            }, 
+            {
+                "action": "persist", 
+                "name": "persist_ssh", 
+                "parameters": {
+                    "file": "/home/admin/.ssh/.authorized_keys"
+                }
+            }, 
+            {
+                "action": "persist", 
+                "name": "persist_ssh", 
+                "parameters": {
+                    "file": "/home/admin/.ssh/.authorized_keys"
+                }
+            }, 
+            {
+                "action": "persist", 
+                "name": "persist_ssh", 
+                "parameters": {
+                    "file": "/home/admin/.ssh/.authorized_keys"
+                }
+            }, 
+            {
+                "action": "persist", 
+                "name": "persist_ssh", 
+                "parameters": {
+                    "file": "/home/admin/.ssh/.authorized_keys"
+                }
+            }, 
+            {
+                "action": "persist", 
+                "name": "persist_ssh", 
+                "parameters": {
+                    "file": "/home/admin/.ssh/.authorized_keys"
+                }
+            }, 
+            {
+                "action": "persist", 
+                "name": "persist_ssh", 
+                "parameters": {
+                    "file": "/home/admin/.ssh/.authorized_keys"
+                }
+            }, 
+            {
+                "action": "persist", 
+                "name": "persist_ssh", 
+                "parameters": {
+                    "file": "/home/admin/.ssh/.authorized_keys"
+                }
+            }
+        ]
+    }
+}
